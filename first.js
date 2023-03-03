@@ -32,7 +32,7 @@ function getWeatherData(location){
         }
     ]
     
-    const result = weatherData.filter(item => item.location == search)
+    const result = weatherData.filter(item => item.location === search)
     const output= result.length==0? "Not Present":"Present";
     console.log(result)
     console.log(output)
